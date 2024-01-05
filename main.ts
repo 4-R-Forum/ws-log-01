@@ -3,6 +3,7 @@ function LogData () {
     readings = data_string.split(",")
     if (readings.length == 5) {
         got5 = true
+        basic.showString("Got5")
         temperature = parseFloat(readings[0])
         pressure = parseFloat(readings[1])
         humidity = parseFloat(readings[2])
@@ -11,10 +12,12 @@ function LogData () {
     } else {
         if (readings.length == 1) {
             got1 = true
+            basic.showString("Got1")
             rain = parseFloat(readings[0])
         }
     }
     if (got5 == true && got1 == true) {
+        basic.showString("GotBoth")
         datalogger.log(
         datalogger.createCV("Temp", temperature),
         datalogger.createCV("Pressure", pressure),
