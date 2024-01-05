@@ -31,6 +31,11 @@ radio.onReceivedString(function (receivedString) {
     data_string = receivedString
     LogData()
 })
+/**
+ * WS-Log
+ * 
+ * Download to RED
+ */
 let rain = 0
 let wind_dir = ""
 let wind_speed = 0
