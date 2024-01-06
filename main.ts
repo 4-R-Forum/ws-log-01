@@ -4,8 +4,8 @@ function LogData () {
     if (readings.length == 5) {
         got5 = true
         temperature = parseFloat(readings[0])
-        pressure = parseFloat(readings[1])
-        humidity = parseFloat(readings[2])
+        humidity = parseFloat(readings[1])
+        pressure = parseFloat(readings[2])
         wind_speed = parseFloat(readings[3])
         wind_dir = readings[4]
     } else {
@@ -39,8 +39,8 @@ radio.onReceivedString(function (receivedString) {
 let rain = 0
 let wind_dir = ""
 let wind_speed = 0
-let humidity = 0
 let pressure = 0
+let humidity = 0
 let temperature = 0
 let readings: string[] = []
 let data_string = ""
