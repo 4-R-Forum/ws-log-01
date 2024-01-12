@@ -26,6 +26,7 @@ function LogData () {
         got1 = false
         got5 = false
     }
+    basic.clearScreen()
 }
 radio.onReceivedString(function (receivedString) {
     data_string = receivedString
