@@ -2,7 +2,6 @@
 // 
 // Download to RED
 function LogData () {
-    basic.showString(data_string)
     readings = data_string.split(",")
     if (readings.length == 5) {
         temperature = parseFloat(readings[0])
@@ -30,7 +29,6 @@ function LogData () {
         periodnum = 0
         daynum += 1
     }
-    basic.clearScreen()
 }
 radio.onReceivedString(function (receivedString) {
     data_string = receivedString
@@ -43,8 +41,8 @@ let wind_speed = 0
 let pressure = 0
 let humidity = 0
 let temperature = 0
-let readings: string[] = []
 let data_string = ""
+let readings: string[] = []
 let periodnum = 0
 let daynum = 0
 let debug = false
