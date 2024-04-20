@@ -67,7 +67,7 @@ radio.setFrequencyBand(0)
 this_day = 0
 this_hour = 0
 this_period = 0
-if (debug == true) {
+if (debug) {
     periods_p_hour = 3
     hours_p_day = 3
 } else {
