@@ -45,8 +45,8 @@ radio.onReceivedString(function (receivedString) {
     this_period += 1
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    // DesktopTest 0420
-    basic.showString("011")
+    // FieldTest 0420
+    basic.showString("012")
 })
 let rain = 0
 let wind_dir = ""
