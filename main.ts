@@ -46,7 +46,7 @@ radio.onReceivedString(function (receivedString) {
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     // FieldTest 0420
-    basic.showString("012")
+    basic.showString("013")
 })
 let rain = 0
 let wind_dir = ""
