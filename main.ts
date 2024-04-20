@@ -45,13 +45,9 @@ radio.onReceivedString(function (receivedString) {
     this_period += 1
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    basic.showString("010")
+    // DesktopTest 0420
+    basic.showString("011")
 })
-/**
- * Build 010
- * 
- * Test 0420
- */
 let rain = 0
 let wind_dir = ""
 let wind_speed = 0
@@ -65,7 +61,7 @@ let periods_p_hour = 0
 let this_period = 0
 let this_hour = 0
 let this_day = 0
-let debug = true
+let debug = false
 radio.setGroup(1)
 radio.setFrequencyBand(0)
 this_day = 0
